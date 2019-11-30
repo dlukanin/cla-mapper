@@ -32,7 +32,7 @@ export class ClaMapper implements IClaMapper {
                     if (value) {
                         args.push(arg);
                     }
-                } else if (type === 'string' || type == 'number') {
+                } else if (type === 'string' || type === 'number') {
                     args.push(arg);
                     args.push(value.toString());
                 }
