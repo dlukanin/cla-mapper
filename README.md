@@ -1,6 +1,7 @@
 # cla-mapper
 [![Build Status](https://travis-ci.org/dlukanin/cla-mapper.svg?branch=master)](https://travis-ci.org/dlukanin/cla-mapper)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/dlukanin/cla-mapper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/dlukanin/cla-mapper/alerts/)
+[![Coverage Status](https://coveralls.io/repos/github/dlukanin/cla-mapper/badge.svg?branch=master)](https://coveralls.io/github/dlukanin/cla-mapper?branch=master)
 
 A small library that processes js object and returns ready for use array of command line args.
 
@@ -10,7 +11,7 @@ A small library that processes js object and returns ready for use array of comm
 
 ## Use
 
-```
+```typescript
 import {ClaMapper} from 'cla-mapper';
 
 const mapper = new ClaMapper({
