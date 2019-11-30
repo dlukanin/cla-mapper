@@ -8,7 +8,7 @@ node_js:
   - "8"
   - "7"
 install:
-  - npm ci
+  - npm i
 script:
   - npm run ci-lint
   - npm t

@@ -7,7 +7,7 @@
     "removeComments": true,
     "noLib": false,
     "declaration": true,
-    "rootDir": "./",
+    "rootDir": "./src",
     "declarationDir": "./build",
     "outDir": "./build",
     "suppressImplicitAnyIndexErrors": true,
