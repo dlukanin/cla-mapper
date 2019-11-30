@@ -1,7 +1,7 @@
 {
   "name": "cla-mapper",
   "version": "0.0.1",
-  "description": "A small library that processes js object and returns ready for use array of command line args",
+  "description": "Command line args mapper. A small library that processes js object and returns ready for use array of command line args",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
