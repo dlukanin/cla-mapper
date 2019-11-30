@@ -16,7 +16,7 @@ describe('ClaMapper', () => {
 
        nothingTest: undefined,
        nothingTest2: '',
-       nothingTest3: null,
+       nothingTest3: null
    };
 
    beforeEach(() => {
@@ -62,6 +62,6 @@ describe('ClaMapper', () => {
            '1',
            '--number-zero-test',
            '0'
-       ])
+       ]);
    });
 });

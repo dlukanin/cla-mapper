@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest --runInBand --coverage",
     "build": "rm -rf ./build && tsc --project tsconfig.json",
-    "lint": "tslint --fix src/**/*.ts && tslint test/**/*.ts",
+    "lint": "tslint --fix src/**/*.ts && tslint --fix test/**/*.ts",
     "ci-lint": "tslint src/**/*.ts && tslint test/**/*.ts",
     "pretest": "npm run build",
     "coverage": "cat ./coverage/lcov.info | coveralls"
