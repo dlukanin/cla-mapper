@@ -16,7 +16,7 @@ import {ClaMapper} from 'cla-mapper';
 
 const mapper = new ClaMapper({
     opt1: '-o',
-    opt2: '--opt2'
+    opt2: '--opt2',
     opt3: '--opt3'
 });
 
