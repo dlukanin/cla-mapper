@@ -1,0 +1,40 @@
+{
+  "name": "cla-mapper",
+  "version": "0.0.1",
+  "description": "A small library that processes js object and returns ready for use array of command line args",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "jest --runInBand --coverage",
+    "build": "rm -rf ./build && tsc --project tsconfig.json",
+    "lint": "tslint --fix src/**/*.ts && tslint test/**/*.ts",
+    "ci-lint": "tslint src/**/*.ts && tslint test/**/*.ts",
+    "pretest": "npm run build",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlukanin/cla-mapper.git"
+  },
+  "keywords": [
+    "cla",
+    "args",
+    "command-line",
+    "mapper"
+  ],
+  "author": "Dmitry Lukanin (dylukanin@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlukanin/cla-mapper/issues"
+  },
+  "homepage": "https://github.com/dlukanin/cla-mapper#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "coveralls": "^3.0.9",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
