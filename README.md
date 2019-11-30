@@ -29,3 +29,8 @@ mapper.getCommandLineArgs({
 
 ## License
 Lib is MIT licensed
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/dlukanin/cla-mapper/badge.svg?style=beer-square)](https://beerpay.io/dlukanin/cla-mapper)  [![Beerpay](https://beerpay.io/dlukanin/cla-mapper/make-wish.svg?style=flat-square)](https://beerpay.io/dlukanin/cla-mapper?focus=wish)
