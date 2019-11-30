@@ -1,4 +1,6 @@
 # cla-mapper
+[![Build Status](https://travis-ci.org/dlukanin/cla-mapper.svg?branch=master)](https://travis-ci.org/dlukanin/cla-mapper)
+
 A small library that processes js object and returns ready for use array of command line args.
 
 ## Install
