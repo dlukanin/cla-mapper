@@ -13,13 +13,13 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
     - run: npm ci
     - run: npm run build
-    - run: npm publish
+    - run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - uses: actions/setup-node@v1
       with:
         registry-url: 'https://npm.pkg.github.com'
         scope: '@dlukanin'
-    - run: npm publish
+    - run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
