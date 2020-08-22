@@ -30,8 +30,10 @@ jobs:
     - name: test
       run: npm t
 
-    - name: coverage
-      run: npm run coverage
+    - name: coveralls
+      uses: coverallsapp/github-action@v1.1.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
       
     - name: lint
       run: npm run ci-lint
