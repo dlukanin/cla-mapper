@@ -7,7 +7,7 @@ A small library that processes js object and returns ready for use array of comm
 
 ## Install
 
-`npm i cla-mapper`
+`npm i @dlukanin/cla-mapper`
 
 ## Use
 
