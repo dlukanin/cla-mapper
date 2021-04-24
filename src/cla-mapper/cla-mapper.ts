@@ -2,6 +2,12 @@ import {IClaMapper} from './cla-mapper.interface';
 
 export class ClaMapper implements IClaMapper {
 
+    private _commandLineArgsMap: Record<string, string>;
+
+    constructor(commandLineArgsMap: Record<string, string>) {
+        this._commandLineArgsMap = commandLineArgsMap;
+    }
+
     public get commandLineArgsMap(): Record<string, string> {
         return this._commandLineArgsMap;
     }
@@ -10,14 +16,8 @@ export class ClaMapper implements IClaMapper {
         this._commandLineArgsMap = val;
     }
 
-    private _commandLineArgsMap: Record<string, string>;
-
-    constructor(commandLineArgsMap: Record<string, string>) {
-        this._commandLineArgsMap = commandLineArgsMap;
-    }
-
-    public getCommandLineArgs(obj: any): string[] {
-        const args = [];
+    public getCommandLineArgs(obj: Record<string, boolean | string | number>): string[] {
+        const args: string[] = [];
 
         Object.entries(obj).forEach((entry) => {
             const key = entry[0];
