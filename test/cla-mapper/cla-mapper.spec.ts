@@ -44,8 +44,8 @@ describe('ClaMapper', () => {
            booleanFalsyTest: false,
            numberTest: 1,
            numberZeroTest: 0,
-
-           objTest: {foo: 'bar'},
+           /* eslint-disable-next-line */
+           objTest: {foo: 'bar'} as any,
            nullTest: null,
            undefinedTest: undefined,
 

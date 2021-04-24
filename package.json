@@ -7,8 +7,8 @@
   "scripts": {
     "test": "jest --runInBand --coverage",
     "build": "rm -rf ./build && tsc --project tsconfig.json",
-    "lint": "tslint --fix src/**/*.ts && tslint --fix test/**/*.ts",
-    "ci-lint": "tslint src/**/*.ts && tslint test/**/*.ts",
+    "lint": "eslint -c .eslintrc.js 'src/**/*.ts' --fix && eslint -c .eslintrc.js --parser-options=project:'tsconfig.tests.json' 'test/**/*.ts' --fix",
+    "ci-lint": "eslint -c .eslintrc.js 'src/**/*.ts' && eslint -c .eslintrc.js --parser-options=project:'tsconfig.tests.json' 'test/**/*.ts'",
     "pretest": "npm run build",
     "coverage": "cat ./coverage/lcov.info | coveralls"
   },
@@ -29,12 +29,19 @@
   },
   "homepage": "https://github.com/dlukanin/cla-mapper#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.10",
-    "@types/node": "^14.6.0",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^10.17.58",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "coveralls": "^3.1.0",
-    "jest": "^26.4.1",
-    "ts-jest": "^26.2.0",
-    "tslint": "^6.1.3",
-    "typescript": "^4.0.2"
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^32.3.1",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.5",
+    "typescript": "^4.2.4"
   }
 }

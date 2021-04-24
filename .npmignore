@@ -11,3 +11,4 @@ tsconfig.json
 tslint.json
 .idea
 .github
+tsconfig.tests.json
