@@ -19,14 +19,14 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: build
-      run: |
-        npm ci
-        npm run build
-    - name: test
-      run: npm t
-    - name: coveralls
-      uses: coverallsapp/github-action@v1.1.1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-    - name: lint
-      run: npm run ci-lint
+        run: |
+          npm ci
+          npm run build
+      - name: test
+        run: npm t
+      - name: coveralls
+        uses: coverallsapp/github-action@v1.1.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: lint
+        run: npm run ci-lint
