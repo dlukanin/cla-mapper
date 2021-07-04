@@ -1,5 +1,5 @@
 # cla-mapper
-[![Build Status](https://travis-ci.org/dlukanin/cla-mapper.svg?branch=master)](https://travis-ci.org/dlukanin/cla-mapper)
+![Build status](https://github.com/dlukanin/cla-mapper/actions/workflows/main.yml/badge.svg)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/dlukanin/cla-mapper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/dlukanin/cla-mapper/alerts/)
 [![Coverage Status](https://coveralls.io/repos/github/dlukanin/cla-mapper/badge.svg?branch=master)](https://coveralls.io/github/dlukanin/cla-mapper?branch=master)
 
