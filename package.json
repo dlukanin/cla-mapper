@@ -1,6 +1,6 @@
 {
   "name": "@dlukanin/cla-mapper",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Command line args mapper. A small library that processes js object and returns ready for use array of command line args",
   "main": "build/index.js",
   "types": "build/index.d.ts",
