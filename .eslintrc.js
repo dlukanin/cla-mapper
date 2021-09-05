@@ -31,7 +31,6 @@ module.exports = {
         "eslint-plugin-prefer-arrow",
         "eslint-plugin-jsdoc",
         "@typescript-eslint",
-        "@typescript-eslint/tslint"
     ],
     "rules": {
         "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -166,20 +165,6 @@ module.exports = {
             }
         ],
         "use-isnan": "error",
-        "valid-typeof": "off",
-        "@typescript-eslint/tslint/config": [
-            "error",
-            {
-                "rules": {
-                    "typedef": [
-                        true,
-                        "call-signature",
-                        "parameter",
-                        "property-declaration",
-                        "member-variable-declaration"
-                    ]
-                }
-            }
-        ]
+        "valid-typeof": "off"
     }
 };
